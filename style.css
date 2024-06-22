@@ -1,8 +1,362 @@
+:root {
+    --devsite-logo-aspect-ratio:75/11;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* =====================
+        nav row
+   ======================*/
+
+.devsite-logo-row-wrapper {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 5px 0 5px rgba(0,0,0,0.5);
+}
+
+
+    .devsite-tabs-wrapper tab{
+        font-size: 20px;
+    }  
+    .devsite-site-logo{
+        display: flex;
+        aspect-ratio:var(--devsite-logo-aspect-ratio,auto);
+        max-height:32px;
+        float: left;
+    }
+    /* aspect-ratio */
+
+    .devsite-row-middle{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        position: relative;    
+    }
+
+
+/* =====================
+        search bar
+   ======================*/
+.devsite-searchbox{
+    display: flex;
+    width: 100%;
+    margin: 4px 0;
+}
+    .search-field{
+        width: 100%;
+        font-size: 20px;
+        background-color: #f1f3f4;
+        padding: 8px;
+        padding-left: 40px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .material-symbols-outlined{
+        top:10px;
+        width: 24px;
+        height: 24px;
+        padding-left: 4px;
+        position: absolute;
+    }
+/* =====================
+      language selector
+   ======================*/
+
+devsite-language-selector ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+devsite-language-selector ul:hover{
+    display: block;
+}
+
+
+
 .devsite-landing-row-item-custom-image-icon{
     height: 64px;
     width: 64px;
 }
-.devsite-landing-row-item-image img{
+/* .devsite-landing-row-item-image img{
     max-width: 100px;
     max-height:100px ;
+} */
+
+@media screen and (max-width:840px){
+    .devsite-header-tabs{
+        display: none;
+    }
+}
+
+/* =====================
+      banner-message
+   ======================*/
+.devsite-banner-message-text{
+    margin-top: 48px;
+    width: 100%;
+    height: 64px;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 16px;
+    font-family: Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;;
+    font-weight: bold;
+    text-align: center;
+    line-height: 64px;
+}
+
+.devsite-banner-message-text a{
+    color: #303f9f
+}
+.dgc-hero-fullscreen-item {
+    background: #eee;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.dgc-hero-fullscreen-item h2{
+    margin: 0px;
+    font-size: 72px;
+}
+
+.dgc-hero-fullscreen-item p{
+    font: 500 20px 'Google Sans';
+}
+.dgc-hero-fullscreen-item a {
+    display: inline-flex;
+    align-items: center;
+    background: #1a73e8;
+    border-radius: 100px;
+    border: none;
+    color: #eee;
+    text-decoration: none;
+    font: 500 20px 'Google Sans';
+    padding: 22px 24px;
+}
+
+/* =====================
+      langing-row-group
+   ======================*/
+.devsite-landing-row-page2 {
+    margin:40px 0;
+}
+
+.devsite-landing-row-group {
+    display: grid;
+    grid: auto-flow/repeat(4,1fr);
+    grid-gap:24px;
+
+}
+
+.devsite-landing-row-item .dgc-logo-garden-card{
+    max-width: 100%;
+    min-height: 100%;
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+
+}
+
+.devsite-landing-row-item .card-item{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.devsite-landing-row-item p:first-of-type{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* =========================
+    devsite-landing-row buttons
+   ============================*/
+
+
+.devsite-landing-row{
+    margin: 24px 0;
+    text-align: center;
+}
+
+.devsite-landing-row-item-buttons{
+    bottom: 0px;
+    margin-top: 16px;
+    padding:12px 24px;
+    text-align: center;
+    background-color: #1a73e8;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #eee;
+    text-decoration: none;
+}
+
+
+
+/* =========================
+    what-are-you-developing-for
+   ============================*/
+
+#what-are-you-developing-for{
+    font:700 48px 'Google Sans';
+}
+
+
+.devsite-landing-row-description{
+    font:500 24px 'Google Sans';
+}
+
+
+.devsite-landing-row-2-up{
+    display: grid;
+    grid: auto-flow/repeat(2,1fr);
+    grid-gap:24px;
+}
+
+
+.devsite-landing-row-2-up .devsite-landing-row-item-buttons{
+
+    max-width: 175px;
+}
+
+.devsite-landing-row-2-up .devsite-landing-row-item{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    border: 1px solid #dadce0;
+}
+.devsite-landing-row-2-up .devsite-landing-row-item-description{
+    padding: 16px;
+    order:-1;
+}
+
+.devsite-landing-row-item-body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+    #mobile a{
+        font-size: 24px;
+        color: #000;
+        text-decoration: none;
+    }
+    .devsite-landing-row-item-description-content {
+        text-align: left;
+        font-size: 18px;
+    }
+.devsite-landing-row-group .dgc-web-ecosystem-car {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.dgc-web-ecosystem-car img {
+    height: 100px;
+    width: 100px;
+}
+
+/* =========================
+        Trending news
+   ============================*/
+#trending-news {
+    font-size: 32px;
+    font-weight: bold;
+ }  
+
+.devsite-landing-row-3-up{
+    display: grid;
+    grid: auto-flow/repeat(3,1fr);
+    grid-gap:24px;
+    padding: 0 24px;
+}
+
+.dgc-web-ecosystem-card{
+    border: 1px solid #dadce0;
+    border-radius: 10px ;
+}
+
+.devsite-landing-row-item-image{
+    margin:0px;
+}
+.dgc-web-ecosystem-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px 10px 0 0;
+}
+#gemini-15-pro-and-15-flash-are-now-generally-available,#gemini-in-android-studio,#start-building-with-project-idx-today{
+    margin: 0px;
+    font-size: 24px;
+}
+
+
+.devsite-landing-row-item-description {
+    padding: 12px;
+}
+
+.devsite-landing-row-item-description-content{
+    text-align: left;
+    padding-top: 12px;
+}
+
+
+/* =========================
+         Jelly fish
+   ============================*/
+.devsite-landing-row-1-up{
+    display: grid;
+    grid: auto-flow/repeat(2,1fr);
+    grid-gap:24px;
+    place-content: center
+}
+#jellyfish{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.android-spotlight{
+    padding:64px 0; 
+    background-color: #f1f3f4;
+    height: 400px;
+}
+.devsite-jellyfish-item-body{
+    text-align: left;
+}
+
+#android-studio-jellyfish-is-now-stable{
+    margin: 0;
+    align-items: center;
+    font-size: 48px;
+    color: #000;
+}
+
+.devsite-jellyfish-description-content{
+    padding-top:24px;
+    padding-bottom: 32px;
+}
+
+
+.event-img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.devsite-landing-row-item-icon{
+    width: 38px;
+    height: 38px;
 }
