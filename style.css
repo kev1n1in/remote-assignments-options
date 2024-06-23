@@ -190,6 +190,7 @@ devsite-language-selector ul:hover{
 }
 
 .devsite-landing-row-item-buttons{
+
     bottom: 0px;
     margin-top: 16px;
     padding:12px 24px;
@@ -357,6 +358,58 @@ devsite-language-selector ul:hover{
 
 
 .devsite-landing-row-item-icon{
-    width: 38px;
-    height: 38px;
+    display: flex;
+    max-width: 38px;
+    max-height: 38px;
 }
+
+#follow-google-for-developers {
+    font-size: 48px;
+}
+
+
+
+
+
+
+#find-an-event-img-classfind-an-event-sticker-srcstatichomepage-assetsimagesfind-an-event-stickerpng,#improve-technical-skills-img-classimprove-skills-sticker-srcstatichomepage-assetsimagesimprove-skills-stickerpng,#join-a-community-img-classjoin-a-community-sticker-srcstatichomepage-assetsimagesjoin-a-community-stickerpng {
+    font-size: 24px;
+}
+
+
+/* footer */
+
+
+.devsite-footer-linkboxes-list{
+    padding: 24px;
+    border-top:1px solid #dadce0 ;
+    border-bottom: 1px solid #dadce0;
+}
+
+.devsite-footer-linkbox,.devsite-footer-linkbox-list{
+    padding: 0px;
+    list-style: none;
+}
+
+.devsite-footer-linkbox-link,.devsite-footer-linkbox-item{
+    margin: 1px 0 4px 0;
+    color: #000;
+}
+
+
+.devsite-footer-sites{
+    border-bottom: 1px solid #dadce0;
+}
+
+.devsite-footer-sites-list{
+    padding-top: 8px;
+    display: flex;
+    list-style: none;
+    gap:40px;
+}
+
+.devsite-footer-sites-item a{
+    text-decoration: none;
+    color: #000;
+}
+
